@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
   res.send('Welcome to the Restaurant API');
 });
 
-app.use('/person',localMdidleware, personRoutes); // Use person routes under /api 
+app.use('/person',personRoutes); // Use person routes under /api 
 app.use('/menu', menuRoutes); // Use menu routes under /menu
 
 app.listen(3000, () => {
